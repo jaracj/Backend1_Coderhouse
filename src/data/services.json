@@ -1,0 +1,11 @@
+[
+    {
+      "id": 1,
+      "name": "Consulta Médica",
+      "description": "Consulta general con médico clínico para evaluación de síntomas y diagnóstico",
+      "duration": 30,
+      "price": 5000,
+      "category": "Medicina Clínica",
+      "available": true
+    }
+]
