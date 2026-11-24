@@ -1,14 +1,14 @@
-import { PORT, NODE_ENV } from './config/env.config.js';
-import ServiceManager from './managers/ServiceManager.js';
+import express from 'express';
+import servicesRouter from './routes/services.router.js';
 
-console.log(`Entorno cargado: ${NODE_ENV}`);
-console.log(`Puerto configurado: ${PORT}`);
+const app = express();
 
-const serviceManager = new ServiceManager();
+app.use(express.json());
 
-async function testManager() {
-  await serviceManager.init(); 
-  console.log('Servicios actuales:', serviceManager.getServices());
-}
+app.use('/api/services', servicesRouter);
 
-testManager();
+app.get('/', (req, res) => {
+    res.status(200).json({ message: 'API de Servicios Médicos funcionando' });
+});
+
+export default app;
