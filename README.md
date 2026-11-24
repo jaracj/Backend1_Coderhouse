@@ -47,11 +47,11 @@ El servicio medico en esta entrega, tiene la siguiente estructura:
 **Base URL:** `http://localhost:8080/api/services`
 
 Método - Ruta - Descripción - Códigos de Estado
-`GET` - `/` - Obtiene todos los servicios. Admite filtros: `?category=...` o `?available=...` - `200`
-`GET` - `/:sid` - Obtiene un servicio por su ID - `200`, `404`
-`POST` - `/` - Crea un nuevo servicio (el ID se genera automáticamente) - `201`, `400`
-`PUT` - `/:sid` - Actualiza un servicio existente (no permite modificar el ID) - `200`, `404`
-`DELETE` - `/:sid` - Elimina un servicio por su ID - `200`, `404`
+- `GET` - `/` - Obtiene todos los servicios. Admite filtros: `?category=...` o `?available=...` - `200`
+- `GET` - `/:sid` - Obtiene un servicio por su ID - `200`, `404`
+- `POST` - `/` - Crea un nuevo servicio (el ID se genera automáticamente) - `201`, `400`
+- `PUT` - `/:sid` - Actualiza un servicio existente (no permite modificar el ID) - `200`, `404`
+- `DELETE` - `/:sid` - Elimina un servicio por su ID - `200`, `404`
 
 ## Ejemplos de uso
 
